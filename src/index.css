@@ -51,10 +51,13 @@ code {
 
 .tasks {
   list-style: none;
+  padding-right: 40px;
 }
 
 .tasks li {
   margin: 10px 0;
+  line-height: 25px;
+  padding: 5px;
 }
 
 .tasks button {
@@ -81,10 +84,13 @@ code {
 
 .completed-tasks {
   list-style:none;
+  padding-right: 40px;
 }
 
 .completed-tasks li {
   margin: 10px 0;
+  line-height: 25px;
+  padding: 5px;
 }
 
 .completed-tasks li:before {

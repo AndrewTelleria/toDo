@@ -15,7 +15,7 @@ class CompletedToDoList extends React.Component {
     if (current.tasks.length === 0) {
       return (
         <ul className="completed-tasks">
-          <h3>No Completed Tasks</h3>
+          <h3>No tasks completed yet, take your time!</h3>
         </ul>
       )
     }

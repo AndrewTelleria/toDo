@@ -17,7 +17,7 @@ class ToDoList extends React.Component {
       return (
       <form className="tasks-form">
         <ul className="tasks">
-          <li><h3>No Tasks</h3></li>
+          <li><h3>Add a task :)</h3></li>
         </ul>
       </form>
       )

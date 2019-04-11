@@ -74,7 +74,7 @@ class CompleteToDoList extends React.Component {
       <div className="main">
         <h1>ToDo</h1>
         <div className="add-task">
-          <h2>Add task</h2>
+          <h2>\/ Add a task \/</h2>
           <AddTask
             addTask={this.state.addTask}
             onAddTask={this.handleAddTask}
