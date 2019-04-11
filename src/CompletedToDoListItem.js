@@ -4,7 +4,7 @@ class CompletedToDoListItem extends React.Component {
   render() {
     const task = this.props.task.description;
     return (
-      <li>
+      <li className="completed-task">
         {task}
       </li>
     )

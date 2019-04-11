@@ -13,9 +13,18 @@ class ToDoList extends React.Component {
           onCompletedTask={this.props.onCompletedTask} />
       );
     }
+    if (current.tasks.length === 0) {
+      return (
+      <form className="tasks-form">
+        <ul className="tasks">
+          <li><h3>No Tasks</h3></li>
+        </ul>
+      </form>
+      )
+    }
     return (
-      <form>
-        <ul>
+      <form className="tasks-form">
+        <ul className="tasks">
           {tasks}
         </ul>
       </form>

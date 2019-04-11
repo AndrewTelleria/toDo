@@ -71,16 +71,26 @@ class CompleteToDoList extends React.Component {
 
   render() {
     return (
-      <div>
-        <ToDoList
-          taskList={this.state.taskHistory}
-          onCompletedTask={this.handleCompletedTask} />
-        <AddTask
-          addTask={this.state.addTask}
-          onAddTask={this.handleAddTask}
-          onTaskListUpdate={this.handleTaskListUpdate} />
-        <CompletedToDoList
-          completedTaskList={this.state.completedTasks} />
+      <div className="main">
+        <h1>ToDo</h1>
+        <div className="add-task">
+          <h2>Add task</h2>
+          <AddTask
+            addTask={this.state.addTask}
+            onAddTask={this.handleAddTask}
+            onTaskListUpdate={this.handleTaskListUpdate} />
+        </div>
+        <div className="todo-list">
+          <h2>ToDo list</h2>
+          <ToDoList
+            taskList={this.state.taskHistory}
+            onCompletedTask={this.handleCompletedTask} />
+        </div>
+        <div className="todo-list-completed">
+          <h2>Completed</h2>
+          <CompletedToDoList
+            completedTaskList={this.state.completedTasks} />
+        </div>
       </div>
     );
   }

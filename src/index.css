@@ -6,9 +6,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(53, 53, 53);
+  color: rgb(247, 247, 247);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.main > h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.add-task {
+  width: calc(100%/3.5);
+  padding: 10px;
+  border: solid 1px rgb(255, 81, 81);
+}
+
+.add-task > h2 {
+  text-align: center;
+}
+
+.add-task-input {
+  padding: 10px;
+  width: 80%;
+}
+
+.todo-list {
+  width: calc(100%/3.5);
+  padding: 10px;
+  border: solid 1px rgb(255, 249, 86);
+}
+
+.tasks {
+  list-style: none;
+}
+
+.tasks li {
+  margin: 10px 0;
+}
+
+.tasks button {
+  margin-right: 10px;
+}
+
+.todo-list > h2 {
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+}
+
+.todo-list-completed {
+  width: calc(100%/3.5);
+  padding: 10px;
+  border: solid 1px rgb(131, 255, 119);
+}
+
+.todo-list-completed > h2 {
+  text-align: center;
+}
+
+.completed-tasks {
+  list-style:none;
+}
+
+.completed-tasks li {
+  margin: 10px 0;
+}
+
+.completed-tasks li:before {
+  content: '✅';
+  margin-right: 5px;
 }

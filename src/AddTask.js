@@ -18,8 +18,9 @@ class AddTask extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmitTask}>
+      <form onSubmit={this.handleSubmitTask} className="add-task-form">
         <input
+          className="add-task-input"
           type="text"
           placeholder="Add task..."
           ref="description"

@@ -12,8 +12,15 @@ class CompletedToDoList extends React.Component {
         task={current.tasks[i]} />
       )
     }
+    if (current.tasks.length === 0) {
+      return (
+        <ul className="completed-tasks">
+          <h3>No Completed Tasks</h3>
+        </ul>
+      )
+    }
     return(
-      <ul>
+      <ul className="completed-tasks">
         {tasks}
       </ul>
     )
