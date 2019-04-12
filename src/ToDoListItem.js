@@ -15,10 +15,12 @@ class ToDoListItem extends React.Component {
     const task = this.props.task.description;
     return (
       <li>
-        <button onClick={this.handleCompletedTask}>
-          Complete
-        </button>
-        {task}
+        <div className="todo-list-item">
+          <button onClick={this.handleCompletedTask}>
+            Complete
+          </button>
+          {task}
+        </div>
       </li>
     );
   }
